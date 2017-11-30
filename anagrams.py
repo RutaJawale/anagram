@@ -19,14 +19,10 @@ def preprocess():
             anagrams = [word]
             dict_words[index] = anagrams
 
-    print("1st attempt: {}".format(dict_words))
-
     for index in dict_words:
         for i in range(1, len(index)):
             if index[i:] in dict_words:
                 dict_words[index].append(dict_words[index[i:]])
-
-        print(dict_words)
 
     for index in dict_words:
         dict_words[index].sort()
