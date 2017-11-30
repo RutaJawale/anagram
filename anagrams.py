@@ -32,6 +32,10 @@ def preprocess():
 def anagram_finder():
     while True:
         word = raw_input("").lower()
+        
+        if word == "":
+            return
+
         word_list = list(word)
         word_list.sort()
         index = "".join(word_list)
