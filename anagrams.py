@@ -20,11 +20,6 @@ def preprocess():
             dict_words[index] = anagrams
 
     for index in dict_words:
-        for i in range(1, len(index)):
-            if index[i:] in dict_words:
-                dict_words[index].append(dict_words[index[i:]])
-
-    for index in dict_words:
         dict_words[index].sort()
         dict_words[index] = " ".join(dict_words[index])
 
@@ -32,7 +27,7 @@ def preprocess():
 def anagram_finder():
     while True:
         word = raw_input("").lower()
-        
+
         if word == "":
             return
 
