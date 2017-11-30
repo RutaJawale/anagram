@@ -4,8 +4,8 @@ anagram
 ## What is the runtime complexity?
 
 Variables:
-- N: length of dictionary
-- W: length of the word
+- `N`: length of dictionary
+- `W`: length of the word
 
 Worst Case Offline: `O(NWlog(W)+N^2log(N))`
 - the first loop `O(N)`
